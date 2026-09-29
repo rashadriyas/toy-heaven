@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In</title>
+<link rel="icon" type="image/svg+xml" href="../images/LOGO F.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/login.css">
+<link rel="stylesheet" href="../CSS/responsive.css">
+<link rel="stylesheet" href="../CSS/reset.css">
+</head>
+<body>
+  <section class="card">
+    <h1>Welcome back</h1>
+    <p class="sub">Sign in to continue.</p>
+
+    <p class="error" id="error">Please enter a username and password.</p>
+
+    <form action="result.html" method="get" id="loginForm">
+      <p class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+      </p>
+      <p class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required minlength="4">
+      </p>
+      <p class="row">
+        <label><input type="checkbox" name="remember" style="width:auto;"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </p>
+      <button type="submit">Sign In</button>
+    </form>
+
+    <p class="foot">No account? <a href="#">Create one</a></p>
+  </section>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      var u = document.getElementById('username').value.trim();
+      var p = document.getElementById('password').value.trim();
+      var err = document.getElementById('error');
+      if(!u || !p){
+        e.preventDefault();
+        err.style.display = 'block';
+      } else {
+        err.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Heaven | Wishlist</title>
+  <link rel="icon" type="image/svg+xml" href="../images/LOGO F.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/reset.css">
+  <link rel="stylesheet" href="../CSS/whishlist.css">
+<link rel="stylesheet" href="../CSS/search.css">
+<link rel="stylesheet" href="../CSS/productfinder.css">
+<link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+
+   <header class="topbar">
+    <a class="logo-link" href="../index.html" aria-label="Home">
+      <img class="logo-img" src="../images/LOGO F.png" alt="Logo" />
+      <h4>Toy heaven</h4>
+    </a>
+
+    <form class="search-form" role="search">
+      <label for="search-input" class="sr-only">Search,Toys,Accessories</label>
+      <input id="search-input" class="search-input" type="text" name="search" placeholder="Search,Toys,Accessories" />
+      <button class="search-btn" type="submit" aria-label="Search">
+        <img class="search-icon" src="../icon images/search bar.png" alt="" />
+      </button>
+    </form>
+
+
+    <ul class="top-icons">
+      <li>
+        <a href="./Whishlist.html" aria-label="Wishlist">
+          <img class="icon" src="../icon images/wishlist.svg" alt="Wishlist" />
+        </a>
+      </li>
+      <li>
+        <a href="./shoppingcart.html" aria-label="cart">
+          <img class="icon" src="../icon images/sh cart.svg" alt="Account" />
+        </a>
+      </li>
+      <li>
+        <a href="./login.html" aria-label="login">
+          <img class="icon" src="../icon images/loginI.svg" alt="Account" />
+        </a>
+      </li>
+      <li>
+
+      </li>
+    </ul>
+  </header>
+
+<nav class="navbar">
+
+    <button 
+        class="hamburger" 
+        type="button"
+        aria-label="Menu" 
+        aria-expanded="false" 
+        aria-controls="nav-menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <ul id="nav-menu" class="nav-menu">
+       <li><a href="../index.html">Home</a></li>
+       <li><a href="../HTML/Aboutus.html">About Us</a></li>
+       <li><a href="../HTML/products listing page.html">Product List</a></li>
+       <li><a href="../HTML/shoppingcart.html">Shopping Cart</a></li>
+       <li><a href="../HTML/Checkout.html">Checkout</a></li>
+       <li><a href="../HTML/Whishlist.html">Whishlist</a></li>
+       <li><a href="../HTML/feedback.html">Feedback and Support</a></li>
+       <li><a href="../HTML/Contactus.html">Contact Us</a></li>
+       <li><a href="../HTML/game.html">Deal Hunter</a></li>
+    </ul>
+
+
+</nav>
+
+
+
+
+<main class="collection-page">
+
+    <header class="collection-hero">
+        <section class="hero-content">
+            <p class="eyebrow">YOUR PERSONAL TOY SHELF</p>
+
+            <h1>
+                Your collection
+                <span class="count" id="countLabel"></span>
+            </h1>
+
+            <p class="hero-description">
+                Keep track of the toys you're loving and planning to buy.
+            </p>
+        </section>
+
+        <aside class="collection-stats" aria-label="Collection statistics">
+
+            <article class="stat-card">
+                <span class="stat-icon">♡</span>
+                <strong id="savedCount">0</strong>
+                <span>Saved</span>
+            </article>
+
+
+        </aside>
+    </header>
+
+
+    <nav class="collection-filter" aria-label="Collection filters">
+        <p class="filter-title">★ Browse your shelf</p>
+
+        <section class="tabs" id="tabs">            
+        </section>
+    </nav>
+
+
+    <section class="collection-content" id="content"></section>
+
+    
+  
+
+    <ul class="product-list" id="wishlist-list">
+
+        <article>
+
+          <section class="product-image">
+
+            <span class="product-badge">
+              New
+            </span>
+
+            <button
+              class="wishlist-btn"
+              type="button"
+              aria-label="Add Beyblade to wishlist"
+            >
+              ♡
+            </button>
+
+            <figure class="thumb">
+
+              <img
+                src="../images for products/Beyblades.jpg"
+                alt="Beyblade toy"
+              >
+
+            </figure>
+
+          </section>
+
+          <section class="product-info">
+
+            <p class="product-category">
+              Action Toys
+            </p>
+
+            <h2>
+              Beyblade Battle Set
+            </h2>
+
+            <p class="rating">
+              ★★★★★
+              <span>(24)</span>
+            </p>
+
+            <p class="price">
+              Rs. 3,500
+            </p>
+
+            <button
+              class="cart-btn"
+              type="button"
+            >
+              Add to Cart
+            </button>
+
+          </section>
+
+        </article>
+
+      </li>
+    
+
+
+      <!-- PRODUCT 2 -->
+
+      <li class="product-card">
+
+        <article>
+
+          <section class="product-image">
+
+            <span class="product-badge sale">
+              25% OFF
+            </span>
+
+            <button
+              class="wishlist-btn"
+              type="button"
+              aria-label="Add Kids Slime to wishlist"
+            >
+              ♡
+            </button>
+
+            <figure class="thumb">
+
+              <img
+                src="../images for products/Kids Slime.jpg"
+                alt="Colourful kids slime"
+              >
+
+            </figure>
+
+          </section>
+
+          <section class="product-info">
+
+            <p class="product-category">
+              Creative Toys
+            </p>
+
+            <h2>
+              Kids Slime Set
+            </h2>
+
+            <p class="rating">
+              ★★★★☆
+              <span>(18)</span>
+            </p>
+
+            <p class="price">
+              <del>Rs. 2,800</del>
+              Rs. 2,100
+            </p>
+
+            <button
+              class="cart-btn"
+              type="button"
+            >
+              Add to Cart
+            </button>
+
+          </section>
+
+        </article>
+
+      </li>
+
+
+      <!-- PRODUCT 3 -->
+
+      <li class="product-card">
+
+        <article>
+
+          <section class="product-image">
+
+            <span class="product-badge">
+              New
+            </span>
+
+            <button
+              class="wishlist-btn"
+              type="button"
+              aria-label="Add Lego toys to wishlist"
+            >
+              ♡
+            </button>
+
+            <figure class="thumb">
+
+              <img
+                src="../images for products/Lego toys.jpg"
+                alt="Lego building toys"
+              >
+
+            </figure>
+
+          </section>
+
+          <section class="product-info">
+
+            <p class="product-category">
+              Building Toys
+            </p>
+
+            <h2>
+              Creative Lego Building Set
+            </h2>
+
+            <p class="rating">
+              ★★★★★
+              <span>(42)</span>
+            </p>
+
+            <p class="price">
+              Rs. 6,500
+            </p>
+
+            <button
+              class="cart-btn"
+              type="button"
+            >
+              Add to Cart
+            </button>
+
+          </section>
+
+        </article>
+
+      </li>
+
+
+      <!-- PRODUCT 4 -->
+
+      <li class="product-card">
+
+        <article>
+
+          <section class="product-image">
+
+            <span class="product-badge">
+              Popular
+            </span>
+
+            <button
+              class="wishlist-btn"
+              type="button"
+              aria-label="Add Pokemon collection to wishlist"
+            >
+              ♡
+            </button>
+
+            <figure class="thumb">
+
+              <img
+                src="../images for products/All kinds of pokemons.jpg"
+                alt="Pokemon toy collection"
+              >
+
+            </figure>
+
+          </section>
+
+          <section class="product-info">
+
+            <p class="product-category">
+              Collectibles
+            </p>
+
+            <h2>
+              Pokemon Collection
+            </h2>
+
+            <p class="rating">
+              ★★★★★
+              <span>(51)</span>
+            </p>
+
+            <p class="price">
+              Rs. 4,800
+            </p>
+
+            <button
+              class="cart-btn"
+              type="button"
+            >
+              Add to Cart
+            </button>
+
+          </section>
+
+        </article>
+
+      </li>
+
+
+      <!-- PRODUCT 5 -->
+
+      <li class="product-card">
+
+        <article>
+
+          <section class="product-image">
+
+            <span class="product-badge sale">
+              25% OFF
+            </span>
+
+            <button
+              class="wishlist-btn"
+              type="button"
+              aria-label="Add kitchen set to wishlist"
+            >
+              ♡
+            </button>
+
+            <figure class="thumb">
+
+              <img
+                src="../images for products/kitchen set.jpg"
+                alt="Kids kitchen play set"
+              >
+
+            </figure>
+
+          </section>
+
+          <section class="product-info">
+
+            <p class="product-category">
+              Pretend Play
+            </p>
+
+            <h2>
+              Kids Kitchen Set
+            </h2>
+
+            <p class="rating">
+              ★★★★☆
+              <span>(16)</span>
+            </p>
+
+            <p class="price">
+              <del>Rs. 6,000</del>
+              Rs. 4,500
+            </p>
+
+            <button
+              class="cart-btn"
+              type="button"
+            >
+              Add to Cart
+            </button>
+
+          </section>
+
+        </article>
+
+      </li>
+
+    </ul>
+
+
+
+
+
+
+<section class="pf" id="product-finder" aria-labelledby="pf-title">
+
+  <header class="pf-head">
+    <p class="pf-eyebrow">SMART PRODUCT FINDER</p>
+    <h2 id="pf-title">Find your perfect toy</h2>
+    <p class="pf-intro">Answer 5 quick questions and we'll match you with the toys that fit best.</p>
+    <button class="pf-btn" id="pf-start" type="button">Start the finder</button>
+  </header>
+
+  <!-- questions -->
+  <section class="pf-quiz" id="pf-quiz" hidden>
+    <p class="pf-step" id="pf-step"></p>
+    <p class="pf-bar"><span id="pf-bar-fill"></span></p>
+    <h3 class="pf-question" id="pf-question"></h3>
+    <section class="pf-options" id="pf-options"></section>
+    <section class="pf-nav">
+      <button class="pf-btn pf-btn-light" id="pf-back" type="button">Back</button>
+      <button class="pf-btn" id="pf-next" type="button" disabled>Next</button>
+    </section>
+  </section>
+
+  <!-- recommendations -->
+  <section class="pf-results" id="pf-results" hidden aria-live="polite">
+    <h3 class="pf-question" id="pf-results-title">Your best matches</h3>
+    <p class="pf-note" id="pf-results-note"></p>
+    <ul class="pf-grid" id="pf-grid"></ul>
+    <section class="pf-nav">
+      <button class="pf-btn pf-btn-light" id="pf-change" type="button">Change my answers</button>
+      <button class="pf-btn" id="pf-restart" type="button">Start again</button>
+    </section>
+  </section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ <footer class="site-footer">
+
+  <nav class="footer-nav" aria-label="Footer navigation">
+
+    <section class="footer-col">
+      <h2 class="footer-heading">Navigation</h2>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../HTML/Aboutus.html">About Us</a></li>
+        <li><a href="../HTML/products listing page.html">Product List</a></li>
+        <li><a href="../HTML/shoppingcart.html">Shopping Cart</a></li>
+        <li><a href="../HTML/Checkout.html">Checkout</a></li>
+        <li><a href="../HTML/Whishlist.html">Whishlist</a></li>
+        <li><a href="../HTML/feedback.html">Feedback and Support</a></li>
+        <li><a href="../HTML/game.html">Deal Hunter</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-col">
+      <h2 class="footer-heading sr-only">Services</h2>
+      <ul class="footer-links">
+        <li><a href="./Contactus.html">Contact Us</a></li>
+        <li><a href="./feedback.html">Email</a></li>
+        
+      </ul>
+    </section>
+
+    <section class="footer-col">
+      <h2 class="footer-heading">Sign UP</h2>
+      <ul class="footer-links">
+        <li><a href="./login.html">To stay updated</a></li>
+      </ul>
+
+      <h2 class="footer-heading footer-heading--spaced">Address</h2>
+      <address class="footer-address">
+        Toy Heaven,<br />
+        Kandy,<br />
+        Sri Lanka.
+      </address>
+
+      <h2 class="footer-heading footer-heading--spaced">Follow us</h2>
+      <ul class="footer-links">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-badge">
+      <img src="../images/LOGO F.png" alt="2026 Toy heaven. All rights reserved" />
+    </section>
+
+  </nav>
+
+  <hr class="footer-divider" />
+
+  <section class="footer-bottom">
+    <section class="footer-copy">&copy; 2025&mdash;2026</section>
+
+    <ul class="footer-legal">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+  </section>
+
+  <section class="footer-brand">
+    <img class="footer-logo" src="../images/LOGO F.png"  alt="Toy Heaven" />
+    <h2 class="footer-wordmark">Toy heaven</h2>
+  </section>
+
+</footer>
+<script src="../Java scripting/wishlist.js"></script>
+<script src="../Java scripting/badge.js"></script>
+<script src="../Java scripting/products-data.js"></script>
+<script src="../Java scripting/search.js"></script>
+<script src="../Java scripting/productfinder.js"></script>
+</body>
+</html>
+

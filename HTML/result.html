@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Success</title>
+<link rel="icon" type="image/svg+xml" href="../images/LOGO F.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/result.css">
+<link rel="stylesheet" href="../CSS/reset.css">
+<link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+  <section class="card">
+    <p class="icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2f7a4f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6L9 17l-5-5"></path>
+      </svg>
+    </p>
+    <h1>You're signed in</h1>
+    <p class="sub" id="message">Submitted successfully.</p>
+
+    <a href="../index.html"><button onclick="history.back()">Go Back</button></a>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get("username");
+    const message = document.getElementById("message");
+    if (username) {
+      message.innerHTML = "Welcome, <strong>" + username + "</strong>. Your details were submitted successfully.";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Toy Heaven | Checkout</title>
+<link rel="icon" type="image/svg+xml" href="../images/LOGO F.png">
+<link rel="stylesheet" href="../CSS/reset.css">
+<link rel="stylesheet" href="../CSS/Checkout.css" />
+<link rel="stylesheet" href="../CSS/responsive.css">
+
+<link rel="stylesheet" href="../CSS/search.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="logo-link" href="../index.html" aria-label="Home">
+      <img class="logo-img" src="../images/LOGO F.png" alt="Logo" />
+      <h4>Toy heaven</h4>
+    </a>
+
+    <form class="search-form" role="search">
+      <label for="search-input" class="sr-only">Search,Toys,Accessories</label>
+      <input id="search-input" class="search-input" type="text" name="search" placeholder="Search,Toys,Accessories" />
+      <button class="search-btn" type="submit" aria-label="Search">
+        <img class="search-icon" src="../icon images/search bar.png" alt="" />
+      </button>
+    </form>
+
+
+    <ul class="top-icons">
+      <li>
+        <a href="./Whishlist.html" aria-label="Wishlist">
+          <img class="icon" src="../icon images/wishlist.svg" alt="Wishlist" />
+        </a>
+      </li>
+      <li>
+        <a href="./shoppingcart.html" aria-label="Shopping cart">
+          <img class="icon" src="../icon images/sh cart.svg" alt="Shopping cart" />
+       </a>
+      </li>
+       <li>
+        <a href="./login.html" aria-label="Login">
+          <img class="icon" src="../icon images/loginI.svg" alt="Login" />
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <nav class="navbar">
+
+    <button 
+        class="hamburger" 
+        type="button"
+        aria-label="Menu" 
+        aria-expanded="false" 
+        aria-controls="nav-menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../HTML/Aboutus.html">About Us</a></li>
+      <li><a href="../HTML/products listing page.html">Product List</a></li>
+      <li><a href="../HTML/shoppingcart.html">Shopping Cart</a></li>
+      <li><a href="../HTML/Checkout.html">Checkout</a></li>
+      <li><a href="../HTML/Whishlist.html">Whishlist</a></li>
+      <li><a href="../HTML/feedback.html">Feedback and Support</a></li>
+      <li><a href="../HTML/Contactus.html">Contact Us</a></li>
+      <li><a href="../HTML/game.html">Deal Hunter</a></li>
+    </ul>
+
+
+</nav>
+
+<main class="checkout-page">
+        <header class="page-heading">
+            <h1>Complete your order<span>.</span></h1>
+            <p>Enter your details, choose your delivery and payment method, then confirm your order.</p>
+        </header>
+        
+
+        <form id="checkout-form" novalidate>
+            <section class="checkout-layout">
+                <section class="customer-panel panel">
+                    <header class="panel-heading">
+                        <p class="step-number">01</p>
+                        <section>
+                            <h2>Delivery details</h2>
+                            <p>Where should we send your toys?</p>
+                        </section>
+                    </header>
+
+                    <fieldset>
+                        <legend>Personal information</legend>
+
+                        <section class="two-column">
+                            <label>
+                                First Name
+                                <input id="first-name" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
+                                <small class="error" id="first-name-error"></small>
+                            </label>
+
+                            <label>
+                                Last Name
+                                <input id="last-name" name="lastName" type="text" autocomplete="family-name" placeholder="Last name" required>
+                                <small class="error" id="last-name-error"></small>
+                            </label>
+                        </section>
+
+                        <label>
+                            Email
+                            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                            <small class="error" id="email-error"></small>
+                        </label>
+
+                        <label>
+                            Phone Number
+                            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="07X XXX XXXX" required>
+                            <small class="error" id="phone-error"></small>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Delivery address</legend>
+
+                        <label>
+                            Address
+                            <input id="address" name="address" type="text" autocomplete="street-address" placeholder="House number, street" required>
+                            <small class="error" id="address-error"></small>
+                        </label>
+
+                        <section class="two-column">
+                            <label>
+                                City
+                                <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="City" required>
+                                <small class="error" id="city-error"></small>
+                            </label>
+
+                            <label>
+                                State / Province
+                                <input id="state" name="state" type="text" autocomplete="address-level1" placeholder="Province" required>
+                                <small class="error" id="state-error"></small>
+                            </label>
+                        </section>
+
+                        <label>
+                            Country
+                            <input id="country" name="country" type="text" autocomplete="country-name" value="Sri Lanka" required>
+                            <small class="error" id="country-error"></small>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Shipping method</legend>
+
+                        <section class="shipping-options">
+                            <label class="choice-card">
+                                <input type="radio" name="shipping" value="standard" data-price="0" checked>
+                                <span>
+                                    <strong>Standard Delivery</strong>
+                                    <small>3–5 business days</small>
+                                </span>
+                                <b>FREE</b>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="shipping" value="express" data-price="8.99">
+                                <span>
+                                    <strong>Express Delivery</strong>
+                                    <small>1–2 business days</small>
+                                </span>
+                                <b>$8.99</b>
+                            </label>
+
+                            <label class="choice-card">
+                                <input type="radio" name="shipping" value="pickup" data-price="0">
+                                <span>
+                                    <strong>Store Pickup</strong>
+                                    <small>Ready in 1–2 days</small>
+                                </span>
+                                <b>FREE</b>
+                            </label>
+                        </section>
+                    </fieldset>
+                </section>
+
+                <aside class="summary-panel">
+                    <section class="panel order-summary">
+                        <header class="panel-heading compact">
+                            <p class="step-number">02</p>
+                            <section>
+                                <h2>Order summary</h2>
+                                <p id="item-count">0 items</p>
+                            </section>
+                        </header>
+
+                        <ul id="order-items" class="order-items" aria-live="polite"></ul>
+
+                        <section class="price-list">
+                            <p><span>Subtotal</span><strong id="subtotal">$0.00</strong></p>
+                            <p><span>Shipping</span><strong id="shipping-cost">FREE</strong></p>
+                            <p class="total"><span>Final Total</span><strong id="final-total">$0.00</strong></p>
+                        </section>
+                    </section>
+
+                    <section class="panel payment-panel">
+                        <header class="panel-heading compact">
+                            <p class="step-number">03</p>
+                            <section>
+                                <h2>Payment method</h2>
+                                <p>Choose how you want to pay.</p>
+                            </section>
+                        </header>
+
+                        <fieldset>
+                            <legend class="visually-hidden">Payment method</legend>
+
+                            <section class="payment-tabs">
+                                <label>
+                                    <input type="radio" name="payment" value="card" checked>
+                                    <span>💳 Card</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="payment" value="cod">
+                                    <span>💵 Cash on Delivery</span>
+                                </label>
+                            </section>
+
+                            <section id="card-fields" class="card-fields">
+                                <label>
+                                    Card Number
+                                    <input id="card-number" name="cardNumber" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456">
+                                    <small class="error" id="card-number-error"></small>
+                                </label>
+
+                                <section class="two-column">
+                                    <label>
+                                        MM / YY
+                                        <input id="expiry" name="expiry" inputmode="numeric" maxlength="5" placeholder="MM/YY">
+                                        <small class="error" id="expiry-error"></small>
+                                    </label>
+
+                                    <label>
+                                        CVC
+                                        <input id="cvc" name="cvc" inputmode="numeric" maxlength="4" placeholder="123">
+                                        <small class="error" id="cvc-error"></small>
+                                    </label>
+                                </section>
+                            </section>
+
+                            <p id="cod-message" class="cod-message" hidden>
+                                You will pay in cash when your order is delivered.
+                            </p>
+                        </fieldset>
+                    </section>
+
+                    <button class="confirm-button" type="submit">
+                        Confirm Order <span>→</span>
+                    </button>
+
+                    <p class="secure-note">🔒 Demo checkout — no real payment is processed.</p>
+                </aside>
+            </section>
+        </form>
+    </main>
+
+    <dialog id="empty-cart-dialog" class="message-dialog">
+        <article>
+            <p class="success-icon">🛒</p>
+            <h2>Your cart is empty</h2>
+            <p>Add some toys to your cart before checking out.</p>
+            <a class="dialog-button" href="./products listing page.html">Browse Toys</a>
+        </article>
+    </dialog>
+
+    <dialog id="success-dialog" class="message-dialog success-dialog">
+        <article>
+            <p class="success-icon">✓</p>
+            <p class="eyebrow">ORDER CONFIRMED</p>
+            <h2>You're all set!</h2>
+            <p id="success-message">Your order has been placed successfully.</p>
+            <p class="order-number" id="success-order-number"></p>
+            <a class="dialog-button" href="./products listing page.html">Continue Shopping</a>
+        </article>
+    </dialog>
+
+
+
+
+
+
+
+
+
+
+
+  
+<footer class="site-footer">
+
+  <nav class="footer-nav" aria-label="Footer navigation">
+
+    <section class="footer-col">
+      <h2 class="footer-heading">Navigation</h2>
+      <ul class="footer-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../HTML/Aboutus.html">About Us</a></li>
+      <li><a href="../HTML/products listing page.html">Product List</a></li>
+      <li><a href="../HTML/shoppingcart.html">Shopping Cart</a></li>
+      <li><a href="../HTML/Checkout.html">Checkout</a></li>
+      <li><a href="../HTML/Whishlist.html">Whishlist</a></li>
+      <li><a href="../HTML/feedback.html">Feedback and Support</a></li>
+      <li><a href="../HTML/game.html">Deal Hunter</a></li>
+      
+        <li><a href="#">Deal Hunter</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-col">
+      <h2 class="footer-heading sr-only">Services</h2>
+      <ul class="footer-links">
+        <li><a href="./Contactus.html">Contact Us</a></li>
+        <li><a href="./feedback.html">Email</a></li>
+        
+      </ul>
+    </section>
+
+    <section class="footer-col">
+      <h2 class="footer-heading">Sign UP</h2>
+      <ul class="footer-links">
+        <li><a href="./login.html">To stay updated</a></li>
+      </ul>
+
+      <h2 class="footer-heading footer-heading--spaced">Address</h2>
+      <address class="footer-address">
+        Toy Heaven,<br />
+        Kandy,<br />
+        Sri Lanka.
+      </address>
+
+      <h2 class="footer-heading footer-heading--spaced">Follow us</h2>
+      <ul class="footer-links">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-badge">
+      <img src="../images/LOGO F.png" alt="2026 Toy heaven. All rights reserved" />
+    </section>
+
+  </nav>
+
+  <hr class="footer-divider" />
+
+  <section class="footer-bottom">
+    <section class="footer-copy">&copy; 2025&mdash;2026</section>
+
+    <ul class="footer-legal">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+  </section>
+
+  <section class="footer-brand">
+    <img class="footer-logo" src="../images/LOGO F.png"  alt="Toy Heaven" />
+    <h2 class="footer-wordmark">Toy heaven</h2>
+  </section>
+
+</footer>
+<script src="../Java scripting/Checkout.js"></script>
+<script src="../Java scripting/badge.js"></script>
+<script src="../Java scripting/checkoutordersummary.js"></script>
+<script src="../Java scripting/products-data.js"></script>
+<script src="../Java scripting/search.js"></script>
+</body>
+</html>
+

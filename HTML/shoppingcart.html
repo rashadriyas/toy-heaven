@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review the toys in your Toy Heaven shopping cart.">
+  <title>Toy Heaven | Shopping Cart</title>
+  <link rel="icon" type="image/svg+xml" href="../images/LOGO F.png">
+  <link rel="stylesheet" href="../CSS/reset.css">
+  <link rel="stylesheet" href="../CSS/shoppingcart.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
+  
+<link rel="stylesheet" href="../CSS/search.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo-link" href="../index.html" aria-label="Home">
+      <img class="logo-img" src="../images/LOGO F.png" alt="Logo" />
+      <h4>Toy heaven</h4>
+    </a>
+
+    <form class="search-form" role="search">
+      <label for="search-input" class="sr-only">Search,Toys,Accessories</label>
+      <input id="search-input" class="search-input" type="text" name="search" placeholder="Search,Toys,Accessories" />
+      <button class="search-btn" type="submit" aria-label="Search">
+        <img class="search-icon" src="../icon images/search bar.png" alt="" />
+      </button>
+    </form>
+
+
+    <ul class="top-icons">
+      <li>
+        <a href="./Whishlist.html" aria-label="Wishlist">
+          <img class="icon" src="../icon images/wishlist.svg" alt="Wishlist" />
+        </a>
+      </li>
+      <li>
+        <a href="./shoppingcart.html" aria-label="cart">
+          <img class="icon" src="../icon images/sh cart.svg" alt="Account" />
+        </a>
+      </li>
+      <li>
+        <a href="./login.html" aria-label="login">
+          <img class="icon" src="../icon images/loginI.svg" alt="Account" />
+        </a>
+      </li>
+      <li>
+
+      </li>
+    </ul>
+  </header>
+  
+
+<nav class="navbar">
+
+    <button 
+        class="hamburger" 
+        type="button"
+        aria-label="Menu" 
+        aria-expanded="false" 
+        aria-controls="nav-menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="../index.html">Home</a></li>
+        <li><a href="../HTML/Aboutus.html">About Us</a></li>
+        <li><a href="../HTML/products listing page.html">Product List</a></li>
+        <li><a href="../HTML/shoppingcart.html">Shopping Cart</a></li>
+        <li><a href="../HTML/Checkout.html">Checkout</a></li>
+        <li><a href="../HTML/Whishlist.html">Whishlist</a></li>
+        <li><a href="../HTML/feedback.html">Feedback and Support</a></li>
+        <li><a href="../HTML/Contactus.html">Contact Us</a></li>
+        <li><a href="../HTML/game.html">Deal Hunter</a></li>
+    </ul>
+
+
+</nav>
+  <main>
+    <header class="cart-header">
+      <section class="cart-heading">
+        <p class="eyebrow">Toy Heaven</p>
+        <h1>Your Shopping Cart</h1>
+        <p class="cart-intro">Review your little one's next favourites before checkout.</p>
+      </section>
+      <a class="continue-link" href="./products listing page.html">← Continue shopping</a>
+    </header>
+
+    <section id="cart-page" class="cart-layout" aria-label="Shopping cart contents">
+      <section class="cart-panel" aria-labelledby="cart-items-title">
+        <section class="cart-panel-heading" aria-labelledby="cart-items-title">
+          <h2 id="cart-items-title">Cart Items <span id="item-summary">(0 items)</span></h2>
+          <button id="clear-cart" class="clear-cart" type="button">Clear cart</button>
+        </section>
+        <section id="cart-items" class="cart-items" aria-live="polite" aria-label="Cart item list"></section>
+      </section>
+
+      <aside id="order-summary" class="order-summary" aria-labelledby="summary-title">
+        <h2 id="summary-title">Order Summary</h2>
+        <section class="summary-row"><span>Subtotal</span><strong id="subtotal">Rs. 0</strong></section>
+        <section class="summary-row"><span>Delivery</span><strong id="delivery">Free</strong></section>
+        <p class="delivery-note">Free delivery on all orders over Rs. 5,000.</p>
+        <section class="coupon-row" aria-label="Discount code">
+          <label class="sr-only" for="coupon-code">Discount code</label>
+          <input id="coupon-code" type="text" placeholder="Discount code" maxlength="20">
+          <button id="apply-coupon" type="button">Apply</button>
+        </section>
+        <p id="coupon-message" class="coupon-message" aria-live="polite"></p>
+        <section class="summary-total"><span>Total</span><strong id="total">Rs. 0</strong></section>
+        <a href="./Checkout.html"><button id="checkout-button" class="checkout-btn" type="button">Proceed to Checkout</button></a>
+        <p class="secure-note"><span aria-hidden="true">🔒</span> Secure checkout with Toy Heaven</p>
+      </aside>
+
+      <section id="empty-cart" class="empty-cart" hidden aria-labelledby="empty-title">
+        <section class="empty-cart-icon" aria-hidden="true">🛒</section>
+        <h2 id="empty-title">Your cart is empty</h2>
+        <p>There are so many toys waiting to find a new home.</p>
+        <a class="shop-now-btn" href="./products listing page.html">Start shopping</a>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+
+  <nav class="footer-nav" aria-label="Footer navigation">
+
+    <section class="footer-col">
+      <h2 class="footer-heading">Navigation</h2>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../HTML/Aboutus.html">About Us</a></li>
+        <li><a href="../HTML/products listing page.html">Product List</a></li>
+        <li><a href="../HTML/shoppingcart.html">Shopping Cart</a></li>
+        <li><a href="../HTML/Checkout.html">Checkout</a></li>
+        <li><a href="../HTML/Whishlist.html">Whishlist</a></li>
+        <li><a href="../HTML/feedback.html">Feedback and Support</a></li>
+        <li><a href="../HTML/game.html">Deal Hunter</a></li>
+        
+        
+      </ul>
+    </section>
+
+    <section class="footer-col">
+      <h2 class="footer-heading sr-only">Services</h2>
+      <ul class="footer-links">
+        <li><a href="./Contactus.html">Contact Us</a></li>
+        <li><a href="./products listing page.html">Email</a></li>
+        
+      </ul>
+    </section>
+
+    <section class="footer-col">
+      <h2 class="footer-heading">Sign UP</h2>
+      <ul class="footer-links">
+        <li><a href="./login.html">To stay updated</a></li>
+      </ul>
+
+      <h2 class="footer-heading footer-heading--spaced">Address</h2>
+      <address class="footer-address">
+        Toy Heaven,<br />
+        Kandy,<br />
+        Sri Lanka.
+      </address>
+
+      <h2 class="footer-heading footer-heading--spaced">Follow us</h2>
+      <ul class="footer-links">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-badge">
+      <img src="../images/LOGO F.png" alt="2026 Toy heaven. All rights reserved" />
+    </section>
+
+  </nav>
+
+  <hr class="footer-divider" />
+
+  <section class="footer-bottom">
+    <section class="footer-copy">&copy; 2025&mdash;2026</section>
+
+    <ul class="footer-legal">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+  </section>
+
+  <section class="footer-brand">
+    <img class="footer-logo" src="../images/LOGO F.png"  alt="Toy Heaven" />
+    <h2 class="footer-wordmark">Toy heaven</h2>
+  </section>
+
+</footer>
+
+  <script src="../Java scripting/cart.js"></script>
+  <script src="../Java scripting/badge.js"></script>
+<script src="../Java scripting/products-data.js"></script>
+<script src="../Java scripting/search.js"></script>
+</body>
+</html>

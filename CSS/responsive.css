@@ -1,0 +1,360 @@
+/* =========================================================
+   Toy Heaven — phones + tablets
+   Put this file in your CSS folder.
+   Add this LAST in every HTML <head>:
+
+   index.html:
+     <link rel="stylesheet" href="./CSS/responsive.css">
+   pages in HTML folder (feedback, contact, game, ...):
+     <link rel="stylesheet" href="../CSS/responsive.css">
+
+   Do not change JavaScript files.
+   ========================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+img, video, iframe, svg { max-width: 100%; height: auto; }
+html, body { max-width: 100%; overflow-x: hidden; }
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+@media (max-width: 1024px) {
+  .topbar {
+    height: auto !important;
+    min-height: 80px;
+    padding: 10px 16px !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  .logo-img { width: 56px !important; height: 56px !important; }
+  .topbar h4 { font-size: 18px !important; }
+
+  .search-form,
+  .search-Products-form {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: 1 1 220px !important;
+    height: 42px !important;
+    min-width: 0 !important;
+  }
+
+  .search-btn { width: 44px !important; }
+  .top-icons { gap: 6px !important; }
+  .top-icons a { width: 40px !important; height: 40px !important; }
+  .icon { width: 24px !important; height: 24px !important; }
+
+  .navbar { position: relative; z-index: 30; }
+  .nav-menu { gap: 14px !important; flex-wrap: wrap; }
+
+  .shop-area { grid-template-columns: 1fr !important; }
+  .product-list { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  .checkout-layout, .cart-layout { grid-template-columns: 1fr !important; }
+
+  .footer-wordmark { font-size: 40px !important; letter-spacing: 0 !important; }
+  .footer-logo { width: 80px !important; height: auto !important; }
+  .footer-badge { position: static !important; }
+}
+
+/* =========================================================
+   MOBILE — phones
+   ========================================================= */
+@media (max-width: 768px) {
+
+  /* ----- header / search / hamburger ----- */
+  .topbar {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 8px 10px !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .logo-img { width: 44px !important; height: 44px !important; }
+  .topbar h4 { font-size: 15px !important; }
+  .logo-link { gap: 6px !important; }
+
+  .search-form,
+  .search-Products-form {
+    order: 3;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 40px !important;
+    padding: 0 6px 0 12px !important;
+  }
+
+  .search-input { font-size: 16px !important; min-width: 0; width: 100%; }
+  .search-btn { width: 40px !important; }
+
+  .top-icons { gap: 2px !important; margin-left: auto; }
+  .top-icons a { width: 36px !important; height: 36px !important; }
+  .icon { width: 22px !important; height: 22px !important; }
+
+  .navbar {
+    position: relative;
+    justify-content: flex-end;
+    min-height: 46px;
+  }
+
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    margin: 4px 8px 4px auto;
+    padding: 0;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    background: #0b1f3a;
+    z-index: 80;
+  }
+
+  .navbar:focus-within .nav-menu,
+  .nav-menu.active { display: flex !important; }
+
+  .nav-menu li { width: 100%; border-top: 1px solid rgba(255,255,255,.08); }
+  .nav-menu a {
+    display: block !important;
+    width: 100%;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+  }
+  .nav-menu a::after { display: none !important; }
+
+  /* ----- footer ----- */
+  .site-footer { padding: 28px 14px 20px !important; }
+  .footer-nav,
+  .footer-bottom,
+  .footer-brand,
+  .footer-legal {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+  .footer-wordmark { font-size: 28px !important; letter-spacing: 0 !important; }
+  .footer-logo { width: 64px !important; height: auto !important; }
+  .footer-col { min-width: 0 !important; width: 100%; }
+
+  /* ----- home / products / cart ----- */
+  .shop-area, .checkout-layout, .cart-layout {
+    grid-template-columns: 1fr !important;
+    padding: 12px !important;
+  }
+  .product-list { grid-template-columns: 1fr 1fr !important; }
+  .about-split { grid-template-columns: 1fr !important; padding: 16px !important; }
+  .name-row, .coupon-row, .summary-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  .checkout-btn, .shop-now-btn, .submit-btn, .shop-button { width: 100%; }
+
+  /* =====================================================
+     FEEDBACK PAGE
+     ===================================================== */
+  main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 12px 40px !important;
+    margin: 0 !important;
+  }
+
+  .page-heading {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    margin: 8px 0 20px !important;
+    padding: 0 4px !important;
+    text-align: center !important;
+    word-wrap: break-word;
+  }
+
+  .feedback-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 24px !important;
+    padding: 16px 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .field-label,
+  .feedback-label {
+    font-size: 15px !important;
+    text-align: left !important;
+    margin: 12px 0 6px !important;
+  }
+
+  .stars {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 2px !important;
+    margin: 8px 0 !important;
+  }
+
+  .stars button {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 28px !important;
+    transform: none !important;
+    padding: 0 !important;
+    flex: 0 0 auto;
+  }
+
+  #rating-status { font-size: 13px !important; margin: 6px 0 16px !important; }
+
+  .feedback-section input[type="text"],
+  .feedback-section input[type="email"],
+  .feedback-section textarea,
+  #feedback-name,
+  #feedback-email,
+  #feedback-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .feedback-section .btn-cyan,
+  .btn-cyan {
+    width: 100% !important;
+    margin-top: 16px !important;
+    padding: 12px !important;
+  }
+
+  .faq-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 16px 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .faq-heading { font-size: 20px !important; margin-bottom: 12px !important; }
+
+  .faq-question {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 15px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+  }
+
+  .faq-answer { padding: 0 12px 12px !important; font-size: 14px !important; }
+
+  .toast {
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    transform: none !important;
+    border-radius: 12px !important;
+    text-align: center;
+  }
+
+  /* =====================================================
+     CONTACT US PAGE
+     ===================================================== */
+  main.card {
+    width: calc(100% - 20px) !important;
+    max-width: 100% !important;
+    margin: 12px auto !important;
+    padding: 16px 12px 24px !important;
+  }
+
+  main.card h1 { font-size: 24px !important; margin-bottom: 12px !important; }
+
+  .field-group { margin-bottom: 14px !important; }
+
+  .name-row .input,
+  .input,
+  .textarea { width: 100% !important; font-size: 16px !important; }
+
+  /* =====================================================
+     DEAL HUNTER GAME
+     ===================================================== */
+  main h1 { font-size: 1.4rem !important; }
+  main > p { font-size: 14px !important; padding: 0 6px; }
+
+  .stats {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 6px 12px !important;
+    width: 100% !important;
+    max-width: 420px;
+    margin: 0 auto 10px !important;
+    font-size: 14px !important;
+  }
+
+  #board {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    width: 100% !important;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  #board .card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px !important;
+    font-size: clamp(1rem, 6vw, 1.8rem) !important;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+@media (max-width: 480px) {
+  .topbar h4 { font-size: 13px !important; }
+  .logo-img { width: 36px !important; height: 36px !important; }
+
+  .page-heading { font-size: 20px !important; }
+  .feedback-section { padding: 14px 10px !important; }
+
+  .stars button {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 24px !important;
+  }
+
+  .product-list { grid-template-columns: 1fr !important; }
+
+  .footer-wordmark { font-size: 22px !important; }
+
+  main.card h1 { font-size: 22px !important; }
+
+  .stats { flex-direction: column !important; align-items: flex-start !important; }
+}
+
+@media (max-width: 360px) {
+  .topbar h4 { display: none; }
+}

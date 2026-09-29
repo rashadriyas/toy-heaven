@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#00D9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Frame/Doorway -->
+  <path d="M14 3h-5a2 2 0 0 0-2 2v2" />
+  <path d="M7 17v2a2 2 0 0 0 2 2h5" />
+  
+  <!-- Open Door -->
+  <path d="M14 3v18l7-3V6l-7-3z" fill="none" />
+  
+  <!-- Arrow pointing into the doorway -->
+  <path d="M3 12h10" />
+  <path d="M9 8l4 4-4 4" />
+</svg>

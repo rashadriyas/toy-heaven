@@ -1,0 +1,130 @@
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(160deg, #0b1f3a 0%, #1b1f2a 100%);
+  font-family:'Inter',sans-serif;
+  padding:24px;
+}
+.card{
+  width:100%;
+  max-width:380px;
+  background:#f6f3ee;
+  border-radius:4px;
+  padding:44px 40px 36px;
+  box-shadow:0 30px 60px rgba(0,0,0,0.35);
+}
+h1{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:30px;
+  margin:0 0 6px;
+  color:#1b1f2a;
+}
+.sub{
+  color:#7c7568;
+  font-size:14px;
+  margin:0 0 30px;
+}
+form{margin:0;}
+label{
+  display:block;
+  font-size:12px;
+  color:#7c7568;
+  margin-bottom:6px;
+}
+.field{margin-bottom:18px;}
+input{
+  width:100%;
+  padding:11px 12px;
+  font-size:15px;
+  font-family:inherit;
+  color:#1b1f2a;
+  background:#fff;
+  border:1px solid #e3ddd1;
+  border-radius:3px;
+  outline:none;
+  transition:border-color .15s ease;
+}
+input:focus{
+  border-color:#a97f36;
+  box-shadow:0 0 0 3px rgba(201,154,74,0.18);
+}
+.row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:2px 0 26px;
+  font-size:13px;
+}
+.row label{display:flex;align-items:center;gap:6px;margin:0;color:#7c7568;}
+.row a{color:#a97f36;text-decoration:none;}
+.row a:hover{text-decoration:underline;}
+button{
+  width:100%;
+  padding:12px;
+  background:#1b1f2a;
+  color:#f6f3ee;
+  border:none;
+  border-radius:3px;
+  font-family:inherit;
+  font-size:15px;
+  font-weight:500;
+  cursor:pointer;
+  transition:background .15s ease;
+}
+button:hover{background:#a97f36;}
+.error{
+  display:none;
+  background:#fbeaea;
+  color:#a33;
+  border:1px solid #e6bcbc;
+  font-size:13px;
+  padding:9px 11px;
+  border-radius:3px;
+  margin-bottom:16px;
+}
+.foot{
+  text-align:center;
+  font-size:13px;
+  color:#7c7568;
+  margin-top:24px;
+}
+.foot a{color:#1b1f2a;font-weight:500;text-decoration:none;}
+.foot a:hover{text-decoration:underline;}
+
+
+
+.top-icons li a {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e63946;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
